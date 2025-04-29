@@ -3,8 +3,8 @@ public class LightBoard
   private boolean[][] lights;
   public LightBoard(int numRows, int numCols){
     lights = new boolean[numRows][numCols];
-    for(int r = 0; r < lights.length; r++){
-      for(int c = 0; c < lights[numRows].length; c++){
+    for(int r = 0; r < numRows; r++){
+      for(int c = 0; c < numCols; c++){
         if(Math.random()*1 < 0.4){
           lights[r][c] = true;
         } else {
