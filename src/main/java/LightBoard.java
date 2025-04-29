@@ -6,9 +6,9 @@ public class LightBoard
     for(int r = 0; r < lights.length; r++){
       for(int c = 0; c < lights[numRows].length; c++){
         if(Math.random()*1 < 0.4){
-          lights[r][c] == true;
+          lights[r][c] = true;
         } else {
-          lights[r][c] == false;
+          lights[r][c] = false;
         }
       }
     }
